@@ -19,3 +19,7 @@ INSERT INTO tb_course (name, img_Uri, img_Gray_uri) VALUES ('BOOTCAMP JAVA', 'ht
 
 INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) values ('1.0', TIMESTAMP WITH TIME ZONE '2020-11-20T03:00:00.12345Z',  TIMESTAMP WITH TIME ZONE '2021-11-20T03:00:00Z', 1); 
 INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) values ('2.0', TIMESTAMP WITH TIME ZONE '2020-12-20T03:00:00.12345Z',  TIMESTAMP WITH TIME ZONE '2021-12-20T03:00:00Z', 1);  
+
+INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) values ('trilha HTML', 'trilha principal do curso', 1, 'https://publicdomainvectors.org/photos/1396435340.png', 1, 1);
+INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) values ('forum', 'tire suas duvidas', 2, 'https://publicdomainvectors.org/photos/1396435340.png', 2, 1);
+INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) values ('Lives', 'lives exclusivas para a turma', 3, 'https://publicdomainvectors.org/photos/1396435340.png', 0, 1);
