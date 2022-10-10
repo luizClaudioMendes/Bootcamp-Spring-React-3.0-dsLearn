@@ -12,3 +12,7 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3);
+
+INSERT INTO tb_course (name, img_Uri, img_Gray_uri) VALUES ('BOOTCAMP HTML', 'https://www.publicdomainpictures.net/pictures/290000/nahled/training-course.jpg', 'https://publicdomainvectors.org/photos/1396435340.png');
+INSERT INTO tb_course (name, img_Uri, img_Gray_uri) VALUES ('BOOTCAMP PHP', 'https://www.publicdomainpictures.net/pictures/290000/nahled/training-course.jpg', 'https://publicdomainvectors.org/photos/1396435340.png');
+INSERT INTO tb_course (name, img_Uri, img_Gray_uri) VALUES ('BOOTCAMP JAVA', 'https://www.publicdomainpictures.net/pictures/290000/nahled/training-course.jpg', 'https://publicdomainvectors.org/photos/1396435340.png'); 
