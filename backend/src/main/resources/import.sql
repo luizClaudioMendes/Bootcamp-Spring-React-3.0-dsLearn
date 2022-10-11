@@ -28,3 +28,10 @@ INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) 
 INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) values ('capitulo 1', 'neste capitulo vamos começar', 1, 'https://publicdomainvectors.org/photos/1396435340.png', 1, null);
 INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) values ('capitulo 2', 'neste capitulo vamos continuar', 2, 'https://publicdomainvectors.org/photos/1396435340.png', 1, 1);
 INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) values ('capitulo 3', 'neste capitulo vamos finalizar', 3, 'https://publicdomainvectors.org/photos/1396435340.png', 1, 2);
+
+INSERT INTO tb_enrollment (user_id, offer_id, enroll_moment, refund_moment, available, only_update) values (1, 1, TIMESTAMP WITH TIME ZONE '2020-11-20T13:00:00.12345Z', null, true, false);
+INSERT INTO tb_enrollment (user_id, offer_id, enroll_moment, refund_moment, available, only_update) values (2, 1, TIMESTAMP WITH TIME ZONE '2020-11-20T13:00:00.12345Z', null, true, false);
+
+
+
+
