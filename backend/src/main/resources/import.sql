@@ -23,3 +23,8 @@ INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) values ('2.0
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) values ('trilha HTML', 'trilha principal do curso', 1, 'https://publicdomainvectors.org/photos/1396435340.png', 1, 1);
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) values ('forum', 'tire suas duvidas', 2, 'https://publicdomainvectors.org/photos/1396435340.png', 2, 1);
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) values ('Lives', 'lives exclusivas para a turma', 3, 'https://publicdomainvectors.org/photos/1396435340.png', 0, 1);
+
+
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) values ('capitulo 1', 'neste capitulo vamos começar', 1, 'https://publicdomainvectors.org/photos/1396435340.png', 1, null);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) values ('capitulo 2', 'neste capitulo vamos continuar', 2, 'https://publicdomainvectors.org/photos/1396435340.png', 1, 1);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) values ('capitulo 3', 'neste capitulo vamos finalizar', 3, 'https://publicdomainvectors.org/photos/1396435340.png', 1, 2);
