@@ -27,7 +27,7 @@ public class JwtTokenEnhancer implements TokenEnhancer{
 		
 		Map<String, Object> map = new HashMap<>();
 		
-		map.put("userFirstName", user.getName()); // adiciona no token esta informaçao
+		map.put("userName", user.getName()); // adiciona no token esta informaçao
 		map.put("userId", user.getId());
 		
 		// downcasting para acessar o tipo que permite adicionar informaçoes
