@@ -47,3 +47,32 @@ INSERT INTO tb_task (id, description, question_count, approval_count, weight, du
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) values (1, 1, 1);
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) values (2, 1, 1);
 
+INSERT INTO tb_notification (text, moment, read, route, user_id) values ('Primeiro feedback notifications', TIMESTAMP WITH TIME ZONE '2020-11-26T13:00:00.12345Z', true,'https://youtu.be/0_e9Egeyk2E' , 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) values ('Segundo feedback notifications', TIMESTAMP WITH TIME ZONE '2020-11-27T13:00:00.12345Z', false,'https://youtu.be/0_e9Egeyk2E' , 1);
+
+INSERT INTO tb_deliver (uri, moment, status, feedback, correct_count, lesson_id, user_id, offer_id) values ('https://github.com/luizClaudioMendes/Bootcamp-Spring-React-3.0-dsLearn', TIMESTAMP WITH TIME ZONE '2020-11-27T14:00:00.12345Z', 0, null, null, 4, 1, 1);
+
+INSERT INTO tb_topic (title, body, moment, author_id, offer_id, lesson_id) values ('titulo do topico 1', 'corpo do topico', TIMESTAMP WITH TIME ZONE '2020-11-27T13:00:00.12345Z', 1, 1, 1);
+INSERT INTO tb_topic (title, body, moment, author_id, offer_id, lesson_id) values ('titulo do topico 2', 'corpo do topico', TIMESTAMP WITH TIME ZONE '2020-11-27T13:01:00.12345Z', 1, 1, 1);
+INSERT INTO tb_topic (title, body, moment, author_id, offer_id, lesson_id) values ('titulo do topico 3', 'corpo do topico', TIMESTAMP WITH TIME ZONE '2020-11-27T13:02:00.12345Z', 1, 1, 1);
+INSERT INTO tb_topic (title, body, moment, author_id, offer_id, lesson_id) values ('titulo do topico 4', 'corpo do topico', TIMESTAMP WITH TIME ZONE '2020-11-27T13:03:00.12345Z', 1, 1, 1);
+
+INSERT INTO tb_topic_likes (topic_id, user_id) values (1,2);
+INSERT INTO tb_topic_likes (topic_id, user_id) values (2,3);
+
+INSERT INTO tb_reply (body, moment, topic_id, author_id) values ('tente reiniciar o computador', TIMESTAMP WITH TIME ZONE '2020-11-27T13:00:00.12345Z', 1, 2);
+INSERT INTO tb_reply (body, moment, topic_id, author_id) values ('Deu certo! valeu!', TIMESTAMP WITH TIME ZONE '2020-11-27T14:00:00.12345Z', 1, 1);
+
+INSERT INTO tb_reply_likes (reply_id, user_id) values (1,1);
+
+
+
+
+
+
+
+
+
+
+
+
