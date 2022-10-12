@@ -123,6 +123,15 @@ public class User implements UserDetails, Serializable {
 		return Objects.equals(id, other.id);
 	}
 	
+	public boolean hasRole(String roleName) {
+		for(Role role : roles) {
+			if(role.getAuthority().equals(roleName)) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
 	// USER DETAILS (SPRING SECURITY)
 		@Override
 		public Collection<? extends GrantedAuthority> getAuthorities() {
