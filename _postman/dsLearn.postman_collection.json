@@ -220,6 +220,48 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Deliveries",
+			"item": [
+				{
+					"name": "Put save Revision",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\" : \"ACCEPTED\",\r\n    \"feedback\" : \"Muito bom!\",\r\n    \"correctCount\" : 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/deliveries/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"deliveries",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
